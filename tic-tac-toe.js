@@ -77,10 +77,10 @@ var canvas= document.getElementById  ("game-board")
 if (turn == "player1") {
 var orb = document.createElementNS (namespace,"circle")
 orb.setAttribute ("cx",45)
-orb.setAttribute ("cy",47)
+orb.setAttribute ("cy",147)
 orb.setAttribute ("r",20)
 orb.setAttribute ("fill","red")
-orb.appendChild(orb)
+canvas.appendChild(orb)
 turn = "player2"
 } else {
  var notSquare = document.createElementNS (namespace, "rect")
