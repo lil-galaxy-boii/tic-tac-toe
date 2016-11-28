@@ -72,10 +72,10 @@ turn = "player1"
 }
 var turn = player1
 var currentShape = "orb"
-function lefMidShape() {
+function leftMidShape() {
 var canvas= document.getElementById  ("game-board")
 if (turn == "player1") {
-var circle = document.createElementNS (namespace,"circle")
+var orb = document.createElementNS (namespace,"circle")
 orb.setAttribute ("cx",45)
 orb.setAttribute ("cy",47)
 orb.setAttribute ("r",20)
@@ -83,13 +83,13 @@ orb.setAttribute ("fill","red")
 orb.appendChild(orb)
 turn = "player2"
 } else {
- var skinnyRect = document.createElementNS (namespace, "rect")
+ var notSquare = document.createElementNS (namespace, "rect")
   notSquare.setAttribute ("x",23)
-  notSquare.setAttribute ("y",25)
+  notSquare.setAttribute ("y",125)
   notSquare.setAttribute ("width",45)
   notSquare.setAttribute ("height",45)
   notSquare.setAttribute ("fill","orange")
-  canvas.appendChild(not)
+  canvas.appendChild(notSquare)
   turn = "player1"
   }
 }
